@@ -1,0 +1,55 @@
+table {
+  width: 100%; 
+  border-collapse: collapse; 
+}
+.count {
+    border: 1px solid black;
+    margin-bottom: 2px;
+    margin-right: 5px;
+    margin-top: 2px;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+tr:nth-of-type(odd) { 
+  background: #F2F7F7; 
+}
+tr th { 
+	font-size: 18px;
+  font-weight: bold; 
+  background: #FFFFFF; 
+}
+td, th { 
+  padding: 6px; 
+  border-bottom: 1px solid #ccc; 
+  text-align: center; 
+}
+
+@media screen and (max-width: 767px) {
+  .items {display:none}    
+  table, thead, tbody, th, td, tr {display: block}  
+  thead tr { 
+    position: absolute;
+    top: -9999px;
+    left: -9999px
+  }
+  tr { border: 1px solid #ccc; }
+  td { 
+    border: none;
+    border-bottom: 1px solid #eee; 
+    position: relative;
+    padding-left: 50%; 
+  }
+  td:before { 
+    position: absolute;
+    top: 6px;
+    left: 6px;
+    width: 45%; 
+    padding-right: 10px; 
+    white-space: nowrap;
+  }
+  
+  td:nth-of-type(1):before { content: "Product"; }
+  td:nth-of-type(2):before { content: "Price"; }
+  td:nth-of-type(3):before { content: "Quantity"; }
+  td:nth-of-type(4):before { content: "Amount"; }
+}

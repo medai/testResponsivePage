@@ -1,0 +1,130 @@
+.hexagon {
+  position: relative;
+  display: inline-block;
+  width: 300px; 
+  height: 173.21px;
+  background-color: #ffffff;
+  margin-bottom: 70px;
+  box-shadow: 0 0 20px rgba(0,0,0,0);
+  border-left: solid 5px #333333;
+  border-right: solid 5px #333333;
+  transform: scale(0.5) rotate(30deg);
+}
+
+.hexagon:before,
+.hexagon:after {
+  content: "";
+  position: absolute;
+  z-index: 1;
+  width: 212.13px;
+  height: 212.13px;
+  -webkit-transform: scaleY(0.5774) rotate(-45deg);
+  -ms-transform: scaleY(0.5774) rotate(-45deg);
+  transform: scaleY(0.5774) rotate(-45deg);
+  background-color: inherit;
+  left: 38.9340px;
+  box-shadow: 0 0 20px rgba(0,0,0,0);
+}
+
+.hexagon:before {
+  top: -106.0660px;
+  border-top: solid 7.0711px #333333;
+  border-right: solid 7.0711px #333333;
+}
+
+.hexagon:after {
+  bottom: -106.0660px;
+  border-bottom: solid 7.0711px #333333;
+  border-left: solid 7.0711px #333333;
+}
+
+.hexagon span {
+  display: block;
+  top:50%;
+  left: 10%;
+  z-index: 2;
+  font-size: 50px;
+  /*color: black;*/
+  text-decoration: none;
+  text-align: center;
+  transform: rotate(-30deg);
+  padding-top: 30px;
+  padding-right: 30px;
+}
+
+.block {
+  width: 1200px;
+  height: 1350px;
+  overflow: hidden;
+  background-color: rgba(255, 255, 255, 1); 
+  color: #fff;
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+
+.social {
+  width: 100px;
+  height: 100px;
+  position: relative;
+  display: inline-block;
+  left: 30%;
+  margin-left: 50px;
+  background: white;
+}
+
+header {
+  position: relative;
+  top: 100px;
+}
+
+footer {
+  position: relative;
+  top: 100px;
+}
+
+.copyright {
+  text-align: middle;
+  font-size: 25px;
+  color: black;
+  font-family: Oswald;
+  text-align:  center;
+  line-height: 0.7;
+}
+
+.brand-neme {
+  text-align: middle;
+  font-size: 75px;
+  color: black;
+  font-family: Oswald;
+  /*text-align:  center;*/
+  line-height: 0.7;
+}
+
+
+ .turn:hover {
+    background-color: #b8d0b6;
+}
+
+.navbar-nav {
+  width: 100%;
+  text-align: center;
+  float: none;
+  display: inline-block;
+}
+
+.navbar-nav li {
+  float: none;
+  font-size: 25px;
+    color: black;
+  display: inline-block;
+}
+
+.leftimg {
+    float:left; 
+    margin: 7px 7px 7px 0; 
+}
+
+
+@media screen and (max-width: 805px) {  
+  .hexagon {margin-bottom: 10px}
+}

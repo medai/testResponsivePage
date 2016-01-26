@@ -1,0 +1,95 @@
+body{background: url(../images/bg1.jpg) repeat; margin:0; padding:0; min-width: 360px}
+.container{width:80%; max-width: 1600px; background:#FFF;  margin-bottom: 5%; margin-top: 5%}
+a{display:block;color: #000;padding:10px}
+a:hover{color:#006F3D; text-decoration: none}
+.row {margin-left: 0; margin-right: 0}
+.icons {padding-bottom: 0; padding-top: 0}
+
+#header{margin-left:0; margin-right:0}
+#header h1{height:60px; margin:0;	padding-top: 20px; color: #006F3D; text-align: center}
+#language{height:40px; text-align: center}
+#language a {display:inline}
+#logo img{height: 180px;	width: 140px}
+#cart img{height: 20px;  width: 20px; margin-bottom: 7px;}
+#name h1{font-size: 48px; margin-bottom: 20px; font-family: Oswald; font-style: italic}
+
+#sidebar{float: left;  width: 24%}
+#navigation ul li a{margin-left:10%}
+#extra a img{display: block; margin: 0 auto; width: 50; height: 50}
+
+#content, #content_lem{margin-left:0; margin-right:0; float:right; width:75%}
+
+.teapot_lemon{margin:0; padding:0;	float: left;	width:25%}
+.teapot_lemon img{display: block; margin: 10 auto 0; }
+.teapot_lemon p{text-align: center}
+
+#footer{background: #FFF; clear:both;width:100%; text-align: center}
+#footer p{margin:0;padding:0}
+
+#menu{background:#FFF; height:50px; font-size: 18px; margin-top: 10px}
+.menu{display:block; padding-left: 0;}
+.menu li{display: inline-block; position:relative; z-index:100; margin-left: 20px;}     
+.menu li a:hover, .menu li:hover > a{color:#006F3D;}
+.mobile-menu:hover{background:#3E4156; color:#ffffff; text-decoration:none}
+.mobile-menu{display:none;
+  width:100%;
+  padding:11px;
+  background:#3E4156;
+  color:#ffffff;
+  text-transform:uppercase;
+  font-weight:600}
+.shadowtext {text-shadow: 0.5px 1px, 0 0 1px red; color:#4048C4}
+
+form.form-horizontal input,
+form.form-horizontal select,
+form.form-horizontal textarea {border: 1px solid black}
+
+.form-group button {font-size:16px; width:100%; border: 2px solid black; padding-left:0; padding-right:0; margin-top: 5px}
+#sum {margin-top: 10px; margin-bottom: 10px; text-align: left}
+
+
+@media screen and (max-width: 1640px) {
+  .menu li{margin-left: 8px;}
+  .menu li a{padding-left: 6px; padding-right: 8px}}
+
+@media screen and (max-width: 1450px) {
+  .menu li{margin-left: 0px;}
+  .menu li a{padding-left: 4px; padding-right: 4px}}
+
+@media screen and (max-width: 1200px) {
+  .menu li a{padding-left: 2px; padding-right: 2px}
+  #menu{margin-top: 10px; font-size: 14px}}
+
+@media screen and (max-width: 1090px) {
+	#logo img {height: 130px;	width: 110px}
+	#name h1 {font-size: 34px;	margin-bottom: 0px; height:30px; padding-top: 0px}
+	#menu{margin-top: 10px; font-size: 14px}}
+
+@media screen and (max-width: 910px) {
+  #name h1 {font-size: 28px;  margin-bottom: 0px; height:30px; padding-top: 0px}
+  .menu li a {padding-right: 0px; font-size: 12px;}  
+  #footer p {font-size: 12px}
+  #extra a img {height: 30px; width: 30px}}
+
+@media screen and (max-width: 768px) {  
+  #logo img{display:none;}
+  .menu li.del {display:none;}}
+
+@media screen and (max-width: 767px) {  
+  .menu{display:none;}     
+  .mobile-menu{display:block;}     
+  nav{margin:0;  background:none;}
+  .menu li{display:block;    margin:0;}
+  .menu li a {background:#ffffff;
+    color:#797979;
+    border-top:1px solid #e0e0e0;
+    border-left:3px solid #ffffff}
+  .menu li a:hover, .menu li:hover > a{
+    background:#f0f0f0;
+    color:#006F3D;
+    border-left:3px solid #9CA3DA}
+  .shadowtext {text-shadow: none}}
+
+@media screen and (max-width: 508px) {  
+  #language h6 a{font-size:10px}
+  #name h1{font-size: 22px}}
